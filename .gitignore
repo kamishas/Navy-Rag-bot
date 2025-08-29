@@ -1,0 +1,34 @@
+@"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+.build/
+
+# Virtual envs
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configs & secrets
+.env
+*.log
+
+# App data
+data/tmp/
+data/*.cache
+docker/elastic-data/
+ollama/
+
+# Streamlit
+.streamlit/
+"@ | Out-File -Encoding utf8 .gitignore
+backend/credentials/service_account.json
